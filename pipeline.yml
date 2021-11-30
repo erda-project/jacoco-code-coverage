@@ -22,7 +22,7 @@ stages:
           params:
             dice_yml: ${git-checkout}/erda.yml
             image:
-              java-demo: ${jacoco-demo:OUTPUT:image}
+              jacoco-demo: ${jacoco-demo:OUTPUT:image}
   - stage:
       - dice:
           alias: erda
